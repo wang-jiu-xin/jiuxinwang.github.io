@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Jiuxin Wang - Research Scientist at Shaanxi Special Equipment Inspection and Research Institute, specializing in intelligent nondestructive testing (NDT), ultrasonic/MFL/visual inspection, deep learning, and inspection robotics.">
+    <meta name="keywords" content="Jiuxin Wang, Nondestructive Testing, Intelligent Inspection, Ultrasonic Testing, Inspection Robot, Deep Learning, Computer Vision, Shaanxi Special Equipment Institute">
+    <meta name="author" content="Jiuxin Wang">
+    <meta name="robots" content="index, follow">
+    <title>Jiuxin Wang | Intelligent NDT · Research Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fb;
+            color: #1e293b;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        .profile-header {
+            background: white;
+            border-radius: 2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.05);
+            padding: 2rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .name-title h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #1e3c72, #2b4c7c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .title-tag {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #2c3e66;
+            background: #eef2ff;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            margin-top: 0.5rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+            font-size: 0.95rem;
+            color: #2c3e50;
+            border-top: 1px solid #e9edf2;
+            padding-top: 1.2rem;
+        }
+        .contact-info i {
+            width: 1.6rem;
+            color: #2b4c7c;
+        }
+        .badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .badge {
+            background: #eef2ff;
+            padding: 0.25rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #1e3c72;
+        }
+        .section-card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.05);
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-left: 5px solid #2b4c7c;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            color: #0f2b3f;
+        }
+        .grid-2col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .info-list {
+            list-style: none;
+        }
+        .info-list li {
+            margin-bottom: 0.7rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .info-list strong {
+            min-width: 100px;
+            font-weight: 600;
+            color: #1f3a5f;
+        }
+        .timeline-item {
+            margin-bottom: 1.3rem;
+        }
+        .timeline-date {
+            font-weight: 600;
+            color: #2b4c7c;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .timeline-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin: 0.2rem 0 0.2rem;
+        }
+        .timeline-desc {
+            color: #475569;
+            font-size: 0.92rem;
+        }
+        .paper-list, .patent-list, .project-list, .award-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .paper-list li, .patent-list li, .project-list li, .award-list li {
+            margin-bottom: 0.9rem;
+            border-bottom: 1px dashed #eef2f5;
+            padding-bottom: 0.75rem;
+        }
+        .paper-title {
+            font-weight: 700;
+            color: #1f3a5f;
+        }
+        .paper-meta {
+            font-size: 0.85rem;
+            color: #4a627a;
+            margin-top: 4px;
+        }
+        .author-highlight {
+            font-weight: 600;
+            color: #1f6392;
+        }
+        .journal-name {
+            font-style: italic;
+        }
+        .inline-icon {
+            margin-right: 8px;
+            color: #2b4c7c;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            font-size: 0.8rem;
+            color: #5b6e8c;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 1rem; }
+            .section-card { padding: 1.3rem; }
+            .name-title h1 { font-size: 2rem; }
+        }
+        a { text-decoration: none; color: #2b4c7c; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="profile-header">
+        <div class="name-title">
+            <h1>Jiuxin Wang</h1>
+            <div class="title-tag"><i class="fas fa-flask"></i> Research Scientist · Intelligent Nondestructive Testing</div>
+            <div class="badge-group">
+                <span class="badge"><i class="fas fa-microchip"></i> Intelligent NDT</span>
+                <span class="badge"><i class="fas fa-waveform"></i> Ultrasonic/MFL/Visual</span>
+                <span class="badge"><i class="fas fa-robot"></i> Inspection Robotics</span>
+                <span class="badge"><i class="fas fa-chart-line"></i> Deep Learning</span>
+            </div>
+        </div>
+        <div class="contact-info">
+            <span><i class="fas fa-phone-alt"></i> +86 183 9235 7994</span>
+            <span><i class="fas fa-envelope"></i> jiuxin.wang@seiti.cn</span>
+            <span><i class="fas fa-map-marker-alt"></i> Xi'an, China · Lianyungang, Jiangsu</span>
+            <span><i class="fas fa-graduation-cap"></i> M.S. in Physics</span>
+        </div>
+        <div style="margin-top: 1rem; background: #f8fafc; padding: 0.8rem 1rem; border-radius: 1rem;">
+            <i class="fas fa-quote-left" style="color:#2b4c7c; opacity:0.6;"></i> 
+            Research scientist specializing in intelligent nondestructive testing (NDT) techniques. Integrating ultrasonic testing, magnetic flux leakage, computer vision, and robotics for industrial inspection. Experienced in deep learning-based defect detection and robotics development. Authored 10+ SCI papers, 17 patents, and led multiple provincial/key projects.
+        </div>
+    </div>
+
+    <!-- Two column layout -->
+    <div class="grid-2col">
+        <!-- Left column -->
+        <div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-user-circle inline-icon"></i> Personal Details</div>
+                <ul class="info-list">
+                    <li><strong>Name</strong> Jiuxin Wang</li>
+                    <li><strong>Born</strong> May 1994 · Lianyungang, Jiangsu</li>
+                    <li><strong>Political Status</strong> CPC Member</li>
+                    <li><strong>Degree</strong> M.S. in Physics, Xi'an Polytechnic University</li>
+                    <li><strong>Research Focus</strong> Intelligent NDT, Ultrasonic/MFL/Visual Inspection, Deep Learning, Inspection Robotics</li>
+                </ul>
+            </div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-university inline-icon"></i> Education</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 – 2024</div>
+                    <div class="timeline-title">M.S. in Physics, Xi'an Polytechnic University</div>
+                    <div class="timeline-desc">Intelligent Nondestructive Testing. Advisor: Prof. Yaohong Su. Research on deep learning-based ultrasonic, MFL, and vision inspection systems, as well as NDT robotics.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 – 2019</div>
+                    <div class="timeline-title">B.S. in Applied Physics, Xi'an Polytechnic University</div>
+                    <div class="timeline-desc">Fundamentals of Nondestructive Testing.</div>
+                </div>
+            </div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-briefcase inline-icon"></i> Work Experience</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 – Present</div>
+                    <div class="timeline-title">Research Scientist, Shaanxi Special Equipment Inspection and Research Institute</div>
+                    <div class="timeline-desc">R&D of intelligent NDT techniques for special equipment; technology transfer of inspection robots.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 – 2022</div>
+                    <div class="timeline-title">Research Assistant, Xi'an Polytechnic University</div>
+                    <div class="timeline-desc">Organized innovation & entrepreneurship competitions; assisted in intelligent inspection lab.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 – 2020</div>
+                    <div class="timeline-title">General Manager, Xi'an Jiutian Incubator Technology Co., Ltd.</div>
+                    <div class="timeline-desc">Technology transfer and startup incubation.</div>
+                </div>
+            </div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-medal inline-icon"></i> Honors & Awards</div>
+                <ul class="award-list" style="list-style: disc; padding-left: 1.2rem;">
+                    <li>🏅 National Scholarship (2023)</li>
+                    <li>🏅 First-Class Academic Scholarship, Xi'an Polytechnic University (2022)</li>
+                    <li>🏅 Lianyungang Outstanding Student (2023)</li>
+                    <li>🏅 "Huawei Cup" China Graduate AI Innovation Competition – National First Prize</li>
+                    <li>🏅 "Tsinghua Craftsmanship" National Engineering Innovation Competition – National First Prize</li>
+                    <li>🏅 China Graduate Electronic Design Contest – National Second Prize</li>
+                    <li>🏅 iCAN International Innovation Contest – National Second Prize</li>
+                    <li>🏅 International Advanced Robot & Simulation Technology Competition – National Second Prize</li>
+                    <li>🏅 China Graduate Energy Equipment Innovation Design Competition – National Third Prize</li>
+                </ul>
+                <div style="margin-top: 10px;"><i class="fas fa-trophy" style="color:#f5b042;"></i> 10+ provincial awards including "Challenge Cup" First Prize, "Internet+" Silver Awards, etc.</div>
+            </div>
+        </div>
+
+        <!-- Right column -->
+        <div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-microscope inline-icon"></i> Research Overview & Technology Transfer</div>
+                <p>Founded a tech company after undergraduate studies, later served as research assistant and pursued M.S. degree. Main research focuses on <strong>intelligent NDT</strong> using deep learning for ultrasonic, MFL, and visual inspection. Successfully developed <strong>intelligent NDT robots</strong> for weld seam tracking, defect recognition, and wall-climbing, with several patents transferred to enterprises. Currently principal investigator in multiple provincial/key projects and promote intelligent upgrading of special equipment inspection.</p>
+                <div style="margin-top: 0.8rem; background: #eef2ff; border-radius: 1rem; padding: 0.5rem 1rem;">
+                    <i class="fas fa-chart-simple"></i> <strong>Academic Output</strong>: 10 SCI papers (4 as first author including one Top-tier Q1), 2 Chinese core journals, 1 EI paper; 3 SCI papers under review; 17 authorized patents; 7 research projects.
+                </div>
+            </div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-flask inline-icon"></i> Selected Research Projects</div>
+                <ul class="project-list">
+                    <li><strong>Xi'an Youth Talent Support Program (2023-2025)</strong>: Machine learning-based apple NDT system, key researcher.</li>
+                    <li><strong>Shaanxi QinChuangYuan "Scientist+Engineer" Project (2022-2024)</strong>: Novel wastewater treatment, key researcher.</li>
+                    <li><strong>Intelligent NDT "Scientist+Engineer" Innovation Team (2024-2026)</strong>: Key researcher.</li>
+                    <li><strong>Shaanxi Provincial Natural Science Basic Research Program (2023-2025)</strong>: Core member.</li>
+                    <li><strong>Shaanxi Provincial Education Department Key Project (2022-2024)</strong>: Multi-sensor fusion for smart firefighting clothing.</li>
+                    <li><strong>Graduate Innovation Fund of XPU (2023-2024)</strong>: Dual CNN for small target re-identification, PI.</li>
+                </ul>
+            </div>
+            <div class="section-card">
+                <div class="section-title"><i class="fas fa-cogs inline-icon"></i> Patents (17 granted/pending)</div>
+                <ul class="patent-list" style="max-height: 280px; overflow-y: auto; padding-right: 5px;">
+                    <li><i class="fas fa-gavel"></i> <strong>Invention</strong>: Wall-climbing vehicle for ultrasonic inspection (granted, first inventor).</li>
+                    <li><i class="fas fa-gavel"></i> Weld surface defect inspection robot (pending, first inventor).</li>
+                    <li><i class="fas fa-gavel"></i> Lightweight pomegranate recognition method based on YOLOv8s (pending, first inventor).</li>
+                    <li><i class="fas fa-file-alt"></i> Electromagnetic wall-climbing robot with universal joint (utility model, first inventor).</li>
+                    <li><i class="fas fa-file-alt"></i> Cable motion ultrasonic detector (utility model, second inventor, transferred).</li>
+                    <li><i class="fas fa-file-alt"></i> Multi-cable synchronous ultrasonic detector (utility model, transferred).</li>
+                    <li><i class="fas fa-file-alt"></i> NDT equipment for plates (utility model, transferred).</li>
+                    <li><i class="fas fa-file-alt"></i> Ultrasonic inspection vehicle for buried gas pipelines (utility model).</li>
+                    <li><i class="fas fa-file-alt"></i> Ultrasonic leak detection devices for metal containers (utility model).</li>
+                    <li><i class="fas fa-file-alt"></i> Smart firefighting clothing with 3D positioning, rescue system, etc. (utility models).</li>
+                </ul>
+                <div class="badge-group" style="margin-top: 0.5rem;"><span class="badge"><i class="fas fa-exchange-alt"></i> 3 patents successfully transferred to industry</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publications Section -->
+    <div class="section-card">
+        <div class="section-title"><i class="fas fa-book-open inline-icon"></i> Selected Publications</div>
+        <h3><i class="fas fa-user-graduate"></i> First-Author Papers</h3>
+        <ul class="paper-list">
+            <li><span class="paper-title">PG-YOLO: An Efficient Detection Algorithm for Pomegranate before Fruit Thinning</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Man Liu, Yurong Du, et al. <span class="journal-name">SCI Q1 TOP</span></span></li>
+            <li><span class="paper-title">Apple rapid recognition and processing method based on an improved version of YOLOv5</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Yaoheng Su, Jiahui Yao, et al. <span class="journal-name">Ecological Informatics, SCI Q2</span></span></li>
+            <li><span class="paper-title">Weld Seam Tracking and Detection Robot Based on Artificial Intelligence</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Lei Huang, Jiahui Yao, et al. (Published)</span></li>
+            <li><span class="paper-title">Small target detection algorithm based on attention mechanism and data augmentation</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Man Liu, Yaohong Su*, et al. <span class="journal-name">SCI Q4</span></span></li>
+            <li><span class="paper-title">Weld Detection and Tracking Algorithm for Inspection Robot Based on Deep Learning</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Jiahui Yao, Xinru Liu, et al. <span class="journal-name">EI</span></span></li>
+            <li><span class="paper-title">Simulation and visualization of ultrasonic transducer sound field based on MATLAB</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Yuan Liu, et al. <span class="journal-name">Chinese Core (Sci-Tech)</span></span></li>
+            <li><span class="paper-title">Metal surface defect segmentation algorithm based on improved YOLOv5</span><br><span class="paper-meta"><span class="author-highlight">Jiuxin Wang</span>, Xin Wu, Yurong Du, et al. <span class="journal-name">Chinese Core (PKU)</span></span></li>
+        </ul>
+        <h3><i class="fas fa-users"></i> Co-authored Papers (selected high-impact)</h3>
+        <ul class="paper-list">
+            <li><span class="paper-title">Weld seam automatic tracking and defect detection system in complex scenes based on machine vision</span><br><span class="paper-meta">Yurong Du, Man Liu, <span class="author-highlight">Jiuxin Wang</span>, et al. <span class="journal-name">Nature Communications (SCI Q1)</span></span></li>
+            <li><span class="paper-title">MED-YOLOv8s: a new real-time road crack, pothole, and patch detection model</span><br><span class="paper-meta">Minghu Zhao, Yaohong Su, <span class="author-highlight">Jiuxin Wang</span>, et al. <span class="journal-name">SCI Q2</span></span></li>
+            <li><span class="paper-title">Interfacial optimization of Z-scheme Ag3PO4/MoS2 nanoflower sphere heterojunction...</span><br><span class="paper-meta">Yimei Zeng, Dingze Lu, <span class="author-highlight">Jiuxin Wang</span>, et al. <span class="journal-name">SCI Q1</span></span></li>
+            <li><span class="paper-title">Controllable preparation and efficient visible-light-driven photocatalytic removal of Cr(VI)...</span><br><span class="paper-meta">Yuhao Zhang, Dingze Lu, <span class="author-highlight">Jiuxin Wang</span>, et al. <span class="journal-name">SCI Q1</span></span></li>
+        </ul>
+    </div>
+
+    <footer>
+        <i class="far fa-copyright"></i> 2025 Jiuxin Wang · Last updated April 2025 · Hosted on GitHub Pages
+    </footer>
+</div>
+</body>
+</html>
